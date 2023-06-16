@@ -9,11 +9,12 @@ function App() {
   return (
     <><Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Musico</Navbar.Brand>
+      <Navbar.Brand href="#home"><img src="musico logo.png" alt="musico logo" width="150" height="65"></img> </Navbar.Brand>
+        {/* <Navbar.Brand href="#home">Musico</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            {/* <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link>
             <Nav.Link href="#link2">Link2</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
@@ -22,7 +23,9 @@ function App() {
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4"></NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
+              <Nav.Link href="#home">Log In</Nav.Link>
+            <Nav.Link href="#link">Sign Up</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
