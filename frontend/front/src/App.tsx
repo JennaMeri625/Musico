@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import SignUpForm from "./components/signUpForm";
+// import { HomePage } from "./Routes/Home";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       </Container>
     </Navbar>
     <SignUpForm />
+    {/* <HomePage />  */}
     </>
    
   );
