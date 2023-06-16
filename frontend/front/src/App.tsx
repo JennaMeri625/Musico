@@ -3,10 +3,11 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import SignUpForm from "./components/signUpForm";
 
 function App() {
   return (
-    <Navbar bg="light" expand="lg">
+    <><Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">Musico</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -26,11 +27,16 @@ function App() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    // <div className="App">
-    //   <button type="button" className="btn btn-primary">Primary</button>
-
-    // </div>
+    <SignUpForm />
+    </>
+   
   );
 }
 
 export default App;
+
+
+ // <div className="App">
+    //   <button type="button" className="btn btn-primary">Primary</button>
+
+    // </div>
