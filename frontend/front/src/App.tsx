@@ -2,15 +2,17 @@ import { Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
 import { HomePage } from "./components/HomePage";
 import { SignUpForm } from "./components/signUpForm";
+import { LogIn } from "./components/LogIn";
 
 function App() {
   return (
   
     <>
     <div><Header /></div>
-    <div><HomePage /></div>
-    <Routes>
+    <Routes >
+      <Route path="/HomePage" element={<HomePage/>} />
       <Route path="/signUpForm" element={<SignUpForm />} />
+      <Route path="/LogIn" element={<LogIn />} />
     </Routes>
     
     </>
