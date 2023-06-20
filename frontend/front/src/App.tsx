@@ -1,21 +1,46 @@
-import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import SignUpForm from "./components/signUpForm";
-// import { HomePage } from "./Routes/Home";
+import { Route, Routes } from "react-router-dom";
+import { Header } from "./components/Header";
+import { HomePage } from "./components/HomePage";
+import { SignUpForm } from "./components/signUpForm";
 
 function App() {
   return (
-    <><Navbar bg="light" expand="lg">
-      <Container>
-      <Navbar.Brand href="#home"><img src="musico logo.png" alt="musico logo" width="150" height="65"></img> </Navbar.Brand>
-        {/* <Navbar.Brand href="#home">Musico</Navbar.Brand> */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            {/* <Nav.Link href="#home">Home</Nav.Link>
+  
+    <>
+    <div><Header /></div>
+    <div><HomePage /></div>
+    <Routes>
+      <Route path="/signUpForm" element={<SignUpForm />} />
+    </Routes>
+    
+    </>
+
+  
+    );
+}
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // <div className="App">
+    //   <button type="button" className="btn btn-primary">Primary</button>
+
+    // </div>
+
+{/* <Navbar.Brand href="#home">Musico</Navbar.Brand> */}
+
+     {/* <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link>
             <Nav.Link href="#link2">Link2</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
@@ -25,23 +50,18 @@ function App() {
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4"></NavDropdown.Item>
             </NavDropdown> */}
-              <Nav.Link href="#home">Log In</Nav.Link>
-            <Nav.Link href="#link">Sign Up</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-    <SignUpForm />
-    {/* <HomePage />  */}
-    </>
-   
-  );
-}
 
-export default App;
+             {/* <Routes>
+      <Route path="/#home" element={<HomePage />} />
+      <Route path="/#link" element={<SignUpForm />} />
+    </Routes>
+       */}
 
-
- // <div className="App">
-    //   <button type="button" className="btn btn-primary">Primary</button>
-
+    //    <div>
+    //   <header>
+    //     <img src="musico logo.png" alt="musico logo" width="150" height="65"></img>
+    //     <Link to="/#login">Log In</Link>
+    //     <Link to="/#signup">Sign Up</Link>
+    //   </header>
     // </div>
+
