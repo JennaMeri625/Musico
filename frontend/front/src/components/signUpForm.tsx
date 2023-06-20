@@ -5,12 +5,12 @@ export function SignUpForm() {
   return (
     <>
     <div>
-        <Form.Text style={{padding: 75, fontSize: 30}}>
+        <Form.Text style={{paddingLeft: 75, fontSize: 30}}>
           Sign up here to continue your search with access to contact details.
         </Form.Text>
     </div>
 
-      <Form style={{padding: 100}}>
+      <Form style={{paddingLeft: 75, marginTop: 40}}>
         <div>
         <Form.Group className="mb-3" controlId="formFullName">
           <Form.Label>Full Name</Form.Label>
