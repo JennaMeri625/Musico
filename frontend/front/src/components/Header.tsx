@@ -7,8 +7,9 @@ export function Header() {
     
     return(
 
+    
     <Navbar bg="light" expand="lg">
-        <Container>
+        <Container >
           <Navbar.Brand><img src="musico logo.png" alt="musico logo" width="150" height="65"></img> </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -21,12 +22,12 @@ export function Header() {
               </LinkContainer>
               <LinkContainer to="/LogIn">
               <Nav.Link>Log In</Nav.Link>
-              </LinkContainer>  
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>  
         </Container>
     </Navbar>
-
+    
     )
 
 

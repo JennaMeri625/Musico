@@ -1,5 +1,6 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { LinkContainer } from "react-router-bootstrap";
 
 export function SignUpForm() {
   return (
@@ -37,10 +38,12 @@ export function SignUpForm() {
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
         </div>
-        
+
+        <LinkContainer to={"/ProfilePage"}>
         <Button variant="primary" type="submit">
           Submit
         </Button>
+        </LinkContainer>
       </Form>
       
     </>
