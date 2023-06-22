@@ -20,6 +20,7 @@ function App() {
       <Route path="/LoggedInPage" element={<LoggedInPage />} />
       <Route path="/ProfilePage" element={<ProfilePage />} />
       <Route path="/ResultsPage" element={<ResultsPage />} />
+      
     </Routes>
     <div><Footer /></div>
     
