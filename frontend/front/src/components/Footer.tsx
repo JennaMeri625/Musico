@@ -74,6 +74,6 @@ export function Footer() {
           </a>
         </div>
       </footer>
-    // </div>
+    </div>
   );
 }
