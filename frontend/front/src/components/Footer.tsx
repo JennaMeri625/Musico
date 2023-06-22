@@ -5,8 +5,8 @@ export function Footer() {
     <footer
       className="fixed-bottom text-center text-white"
       style={{ backgroundColor: "black" }}
-    >
-      <div className="container pt-4">
+      >
+        <div className="container pt-4">
           <section className="mb-4">
             <a
               className="btn btn-link btn-floating btn-lg text-dark m-1"
