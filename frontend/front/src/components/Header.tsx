@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { Link } from "react-router-dom";
-
 export function Header() {
   const [showText, setShowText] = useState(false);
-
-  const handleLogoClick = () => {
-    setShowText(!showText);
+  const handleMouseEnter = () => {
+    setShowText(true);
   };
-
+  const handleMouseLeave = () => {
+    setShowText(false);
+  };
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="dark" expand="lg" variant="dark">
         <Container>
           <LinkContainer to="/HomePage">
             <Navbar.Brand>
@@ -21,7 +21,8 @@ export function Header() {
                 alt="musico logo"
                 width="150"
                 height="65"
-                onClick={handleLogoClick}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
                 style={{ cursor: "pointer" }}
               />
             </Navbar.Brand>
@@ -42,28 +43,28 @@ export function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
       {showText && (
-    <div
-    style={{
-      backgroundColor: "black",
-      color: "white",
-      textAlign: "left",
-      padding: "10px",
-      position: "absolute",
-      left: "85px",  // Adjust the left value to move the div to the right
-      top: "80px",
-      width: "200px",
-      borderRadius: "10px",
-    }}
-  >
-    <p>This is the text that appears when the logo is clicked.</p>
+        <div
+        style={{
+          backgroundColor: "black",
+          color: "white",
+          textAlign: "left",
+          padding: "10px",
+          position: "absolute",
+          left: "85px",  // Adjust the left value to move the div to the right
+          top: "80px",
+          width: "200px",
+          borderRadius: "10px",
+        }}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <p>This is the text that appears when hovering over the logo.</p>
         </div>
       )}
     </>
   );
 }
-
 
 {/* <Navbar bg="light" expand="lg">
     //   <Container>
