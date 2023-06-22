@@ -16,7 +16,7 @@ export function Header() {
 
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="dark" expand="lg" variant="dark">
         <Container>
           <LinkContainer to="/HomePage">
             <Navbar.Brand>
