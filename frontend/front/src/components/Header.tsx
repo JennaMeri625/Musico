@@ -4,9 +4,11 @@ import { LinkContainer } from "react-router-bootstrap";
 import { Link } from "react-router-dom";
 export function Header() {
   const [showText, setShowText] = useState(false);
+
   const handleMouseEnter = () => {
     setShowText(true);
   };
+
   const handleMouseLeave = () => {
     setShowText(false);
   };
