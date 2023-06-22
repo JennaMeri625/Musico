@@ -6,6 +6,7 @@ import { LogIn } from "./components/LogIn";
 import { LoggedInPage } from "./components/LoggedInPage";
 import { ProfilePage } from "./components/ProfilePage";
 import { ResultsPage } from "./components/ResultsPage";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="/ProfilePage" element={<ProfilePage />} />
       <Route path="/ResultsPage" element={<ResultsPage />} />
     </Routes>
+    <div><Footer /></div>
     
     </>
 
