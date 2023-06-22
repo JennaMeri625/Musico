@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import { Link } from "react-router-dom";
+
 export function Header() {
   const [showText, setShowText] = useState(false);
 
@@ -44,6 +44,7 @@ export function Header() {
             </Nav>
           </Navbar.Collapse>
         </Container>
+
       </Navbar>
       {showText && (
         <div
@@ -82,3 +83,4 @@ export function Header() {
     //     </Navbar.Collapse>
     //   </Container>
     // </Navbar> */}
+
