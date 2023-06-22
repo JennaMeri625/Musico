@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { Link } from "react-router-dom";
-
 export function Header() {
   const [showText, setShowText] = useState(false);
 
@@ -13,7 +12,6 @@ export function Header() {
   const handleMouseLeave = () => {
     setShowText(false);
   };
-
   return (
     <>
       <Navbar bg="dark" expand="lg" variant="dark">
@@ -47,7 +45,6 @@ export function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
       {showText && (
         <div
         style={{
@@ -70,8 +67,6 @@ export function Header() {
     </>
   );
 }
-
-
 
 {/* <Navbar bg="light" expand="lg">
     //   <Container>
