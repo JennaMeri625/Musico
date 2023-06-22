@@ -1,4 +1,3 @@
-import { Header } from "./Header";
 import { HomePage } from "./HomePage";
 import { LinkContainer } from "react-router-bootstrap";
 
