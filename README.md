@@ -15,6 +15,8 @@ A web app from [Lance](https://github.com/lancechise), [Jenna](https://github.co
 ## Future Goals
 
 - Allow the clients to be able to create their own "Looking for..." pages that musicians could search through.
+  
+- Create a mailing list that goes out when the clients search results update. "It looks like more musicians are in your search area.  Take a look..."
 
 ## Technologies Used
 
