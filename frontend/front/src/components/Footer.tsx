@@ -1,11 +1,12 @@
 export function Footer() {
   return (
-    // <div className="container my-5">
-      <footer
-        className="text-center text-white"
-        style={{ backgroundColor: "#f1f1f1" }}
-      >
-        <div className="container pt-4">
+    <div className="container-fluid d-flex flex-column min-vh-100">
+    <div className="flex-grow-1"></div>
+    <footer
+      className="fixed-bottom text-center text-white"
+      style={{ backgroundColor: "black" }}
+    >
+      <div className="container pt-4">
           <section className="mb-4">
             <a
               className="btn btn-link btn-floating btn-lg text-dark m-1"
@@ -73,6 +74,6 @@ export function Footer() {
           </a>
         </div>
       </footer>
-    // </div>
+    </div>
   );
 }
