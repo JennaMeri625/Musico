@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "jsx": "react",
     "module": "commonjs",
     "noImplicitReturns": true,
     "noUnusedLocals": true,
@@ -14,5 +13,5 @@
   "compileOnSave": true,
   "include": [
     "src"
-  ]
+, "../../frontend/front/src/AuthContext.ts", "../../frontend/front/src/SignInAndOut.tsx", "../../frontend/front/src/db.ts"  ]
 }
