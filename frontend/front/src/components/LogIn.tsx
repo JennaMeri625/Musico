@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { LinkContainer } from "react-router-bootstrap";
+import { signInWithGoogle } from "../firebaseConfig";
 
 
 export const LogIn: React.FC = () => {
@@ -58,6 +59,13 @@ export const LogIn: React.FC = () => {
             style={{ backgroundColor: "black", color: "white", fontWeight: "bold", padding: "10px 20px", border: "none" }}
           >
             Login
+          </button>
+          </LinkContainer>
+          <LinkContainer to={"/ProfilePage"}>
+          <button 
+          onClick={signInWithGoogle}
+          >
+            Or Sign in with Google
           </button>
           </LinkContainer>
         </div>

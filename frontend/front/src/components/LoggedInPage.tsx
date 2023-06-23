@@ -1,3 +1,4 @@
+import { signOut } from "../firebaseConfig";
 import { HomePage } from "./HomePage";
 import { LinkContainer } from "react-router-bootstrap";
 
@@ -24,7 +25,7 @@ export function LoggedInPage() {
 
         <div style={{marginLeft: 500, marginTop: 30}}>
         <LinkContainer to={"/HomePage"}>
-        <button> Sign Out </button>
+        <button onClick={signOut}> Sign Out </button>
         </LinkContainer>
         </div>
 
