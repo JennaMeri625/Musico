@@ -80,7 +80,7 @@ export function SignUpForm() {
                     border: "none",
                   }}
                 >
-                  Search
+                  Sign In
                 </button>
 </LinkContainer>
           </div>
