@@ -62,7 +62,7 @@ export function Header() {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <p>This is the text that appears when hovering over the logo.</p>
+          <p>We give artists a platform to market themselves.  Seekers can review the artists work, contact the artist, pay artists for their service, all in one place. </p>
         </div>
       )}
     </>
