@@ -7,7 +7,7 @@ export function ProfilePage() {
 
 
         <div style={{ textAlign: "center", fontSize: 50, marginTop: 100 }}>
-            This would be their profile.
+            {/* This would be their profile. */}
         </div>
 
 
