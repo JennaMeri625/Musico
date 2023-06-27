@@ -46,7 +46,9 @@ export function LoggedInPage() {
             </button>
           </LinkContainer>
         </div>
-        </div>
-        </>
-    );
-};
+      </div>
+
+      <HomePage />
+    </>
+  );
+}
