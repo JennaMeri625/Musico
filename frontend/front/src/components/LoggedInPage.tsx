@@ -32,8 +32,6 @@ export function LoggedInPage() {
         <button onClick={signOut}> Sign Out </button>
         </LinkContainer>
         </div>
-
-
         </>
     )
 }
