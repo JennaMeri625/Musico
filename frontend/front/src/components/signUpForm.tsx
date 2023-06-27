@@ -1,6 +1,6 @@
-import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { LinkContainer } from "react-router-bootstrap";
+import { signInWithGoogle } from "../firebaseConfig";
 
 
 export function SignUpForm() {
@@ -85,6 +85,13 @@ export function SignUpForm() {
 </LinkContainer>
           </div>
         </Form>
+        <LinkContainer to={"/ProfilePage"}>
+          <button 
+          onClick={signInWithGoogle}
+          >
+            Or Sign up with Google
+          </button>
+          </LinkContainer>
       </div>
     </div>
   );
