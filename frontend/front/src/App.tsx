@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
 import { HomePage } from "./components/HomePage";
-import { SignUpForm } from "./components/signUpForm";
+import { SignUpUser } from "./components/SignUpForm";
 import { LogIn } from "./components/LogIn";
 import { LoggedInPage } from "./components/LoggedInPage";
 import { ProfilePage } from "./components/ProfilePage";
@@ -14,8 +14,9 @@ function App() {
     <>
     <div><Header /></div>
     <Routes >
+      <Route path="/" element={<HomePage/>} />
       <Route path="/HomePage" element={<HomePage/>} />
-      <Route path="/signUpForm" element={<SignUpForm />} />
+      <Route path="/signUpForm" element={<SignUpUser />} />
       <Route path="/LogIn" element={<LogIn />} />
       <Route path="/LoggedInPage" element={<LoggedInPage />} />
       <Route path="/ProfilePage" element={<ProfilePage />} />
