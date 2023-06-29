@@ -1,9 +1,48 @@
 import Form from "react-bootstrap/Form";
 import { LinkContainer } from "react-router-bootstrap";
 import { signInWithGoogle } from "../firebaseConfig";
+import { useState } from "react";
+import User from "../../../../backend/functions/src/models/User";
+import { addUser } from "../services/Userservice";
 
 
-export function SignUpForm() {
+
+export function SignUpUser() {
+
+    const [fullName, setFullName] = useState("")
+    const [ phoneNumber, setPhoneNumber ] = useState("")
+    const [zipCode, setZipCode] = useState("")
+    const [email, setEmail] = useState("")
+    const [userName, setUserName] = useState("")
+    const [password, setPassword] = useState("")
+    const [musician, setMusician] = useState(false);
+
+
+    function handleSignUpUser(e: any) {
+      e.preventDefault();
+      const newUser: User = {
+        fullName,
+        phoneNumber,
+        zipCode,
+        email,
+        userName,
+        password,
+        musician
+      }
+console.log("running");
+
+      addUser(newUser).then(data => console.log(data));
+      setFullName("");
+      setPhoneNumber("");
+      setZipCode("");
+      setEmail("");
+      setUserName("");
+      setPassword("");
+      setMusician(false)
+    }
+
+
+
   return (
     <div style={{ display: "flex", justifyContent: "center", paddingTop: "20px" }}>
       <div>
@@ -13,13 +52,14 @@ export function SignUpForm() {
         </div>
 
 
-        <Form style={{ marginTop: 30, backgroundColor: "black", borderRadius: "50px", padding: "20px",  }}>
+        <Form onSubmit={handleSignUpUser} style={{ marginTop: 30, backgroundColor: "black", borderRadius: "50px", padding: "20px",  }}>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <Form.Group className="mb-3" controlId="formFullName">
               <Form.Control
                 style={{ marginBottom: 10, textAlign: "center", width: "auto", margin: "0 auto" }}
-                type="FullName"
+                type="text"
                 placeholder="Enter Full Name"
+                value={fullName} onChange={(e) => setFullName(e.target.value)}
               />
             </Form.Group>
 
@@ -27,8 +67,9 @@ export function SignUpForm() {
             <Form.Group className="mb-3" controlId="formPhoneNumber">
               <Form.Control
                 style={{ marginBottom: 10, textAlign: "center", width: "auto", margin: "0 auto" }}
-                type="phonenumber"
+                type="number"
                 placeholder="Enter Phone Number"
+                value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)}
               />
             </Form.Group>
 
@@ -36,8 +77,9 @@ export function SignUpForm() {
             <Form.Group className="mb-3" controlId="formZipCode">
               <Form.Control
                 style={{ marginBottom: 10, textAlign: "center", width: "auto", margin: "0 auto" }}
-                type="zipcode"
+                type="number"
                 placeholder="Enter Zipcode"
+                value={zipCode} onChange={(e) => setZipCode(e.target.value)}
               />
             </Form.Group>
 
@@ -47,13 +89,15 @@ export function SignUpForm() {
                 style={{ marginBottom: 10, textAlign: "center", width: "auto", margin: "0 auto" }}
                 type="email"
                 placeholder="Enter email"
+                value={email} onChange={(e) => setEmail(e.target.value)}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Group className="mb-3" controlId="formBasicUsername">
               <Form.Control
                 style={{ marginBottom: 10, textAlign: "center", width: "auto", margin: "0 auto" }}
-                type="Username"
+                type="text"
                 placeholder="Create Username"
+                value={userName} onChange={(e) => setUserName(e.target.value)}
               />
             </Form.Group>
 
@@ -63,13 +107,22 @@ export function SignUpForm() {
                 style={{ marginBottom: 10, textAlign: "center", width: "auto", margin: "0 auto" }}
                 type="password"
                 placeholder="Create Password"
+                value={password} onChange={(e) => setPassword(e.target.value)}
               />
             </Form.Group>
-          </div>
+            </div>
+
+            <div className="formMusician"
+              style={{ marginBottom: 10, textAlign: "center", width: "auto", margin: "0 auto" }}>
+                <input type="checkbox"
+                checked={musician} onChange={(e) => setMusician(e.target.checked)} />
+            </div>
+            
+          
 
 
           <div style={{ display: "flex", justifyContent: "center" }}>
-          <LinkContainer to={"/ProfilePage"}>
+         
           <button
                   type="submit"
                   style={{
@@ -82,7 +135,7 @@ export function SignUpForm() {
                 >
                   Sign In
                 </button>
-</LinkContainer>
+
           </div>
         </Form>
         <LinkContainer to={"/ProfilePage"}>

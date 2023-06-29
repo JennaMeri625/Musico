@@ -62,11 +62,6 @@ export function Header() {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         > <p>We give artists a platform to market themselves. Seekers are able to search for artists and contact them via this app.
-
-
-
-
-
         </p>
           {/* <p>We give artists a platform to market themselves.  Seekers can review the artists work, contact the artist, pay artists for their service, all in one place. </p> */}
         </div>
