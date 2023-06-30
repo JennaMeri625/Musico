@@ -4,7 +4,7 @@ export function Footer() {
     <div className="flex-grow-1"></div>
     <footer
       className="fixed-bottom text-center text-white"
-      style={{ backgroundColor: "black" }}
+      style={{ backgroundColor: "black", height: "50px" }}
       >
         <div className="container pt-4">
           <section className="mb-4">

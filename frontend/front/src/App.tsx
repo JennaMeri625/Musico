@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
 import { HomePage } from "./components/HomePage";
-import { SignUpUser } from "./components/SignUpForm";
+import { SignUpUser } from "./components/signUpForm";
 import { LogIn } from "./components/LogIn";
 import { LoggedInPage } from "./components/LoggedInPage";
 import { ProfilePage } from "./components/ProfilePage";
