@@ -141,7 +141,7 @@ export function SignUpUser() {
                 borderRadius: "5px", // Add border radius if desired
               }}
             >
-              Sign In
+              Sign Up
             </button>
           </div>
         </Form>

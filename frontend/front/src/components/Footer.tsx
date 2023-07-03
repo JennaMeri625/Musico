@@ -1,3 +1,5 @@
+import GitHubButton from "react-github-btn";
+
 export function Footer() {
   return (
     <div className="container-fluid d-flex flex-column min-vh-100">
@@ -6,6 +8,12 @@ export function Footer() {
       className="fixed-bottom text-center text-white"
       style={{ backgroundColor: "black", height: "50px" }}
       >
+        <div>
+        <GitHubButton href="https://github.com/omareo22" data-show-count="true" aria-label="Follow @omareo22 on GitHub">Follow @omareo22</GitHubButton>
+        <GitHubButton href="https://github.com/JennaMeri625" data-show-count="true" aria-label="Follow @JennaMeri625 on GitHub">Follow @JennaMeri625</GitHubButton>
+        <GitHubButton href="https://github.com/trelaj" data-show-count="true" aria-label="Follow @trelaj on GitHub">Follow @trelaj</GitHubButton>
+        <GitHubButton href="https://github.com/lancechise" data-show-count="true" aria-label="Follow @lancechise on GitHub">Follow @lancechise</GitHubButton>
+        </div>
         <div className="container pt-4">
           <section className="mb-4">
             <a

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import GitHubButton from 'react-github-btn';
 
 export function Header() {
   const [showText, setShowText] = useState(false);
